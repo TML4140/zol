@@ -1,0 +1,112 @@
+/*****************************rest*********************************/
+html,body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,img,p,i,span{padding:0;margin:0;}
+h1,h2,h3,h4,h5,h6,strong{font-weight:100;}
+a{text-decoration:none;color:#925b2c;}
+img{border:0;display:block;}
+ul,li,ol{list-style:none;}
+body{font:12px/1.5 Arial;color:#333333;}
+i{font-style:normal;}
+.clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;s}
+.center{width:1200px;margin:0 auto;}
+/*****************************头尾部的样式************************/
+/*****************************top***********************/
+.topbar{height:29px;width:100%;background:#f5f5f5;border-bottoom:1px solid #e6e6e6;}
+.wrapper {width:1200px;margin:0 auto;line-height:29px;}
+.logininfo{float:left;width:304px;height:29px;}
+.logininfo .no-padding{padding-right:0;}
+.wrapper .nocolorc a{color:#333333;}
+.logininfo span{float:left;padding-right:23px;}
+.wrapper span a{color:#3366cc;}
+.wrapper  a{font:12px Arial;color:#333333;}
+.wrapper  a:hover{text-decoration:underline;color:#c40000;}
+
+
+.topmenu{float:right;height:29px;}
+.topmenu li{float:left;}
+.topmenu li a{padding:0 10px;float:left;height:29px;line-height:29px;}
+.topmenu .mobile{background:url(img/mobile.jpg) no-repeat left center;
+					padding-left:15px;}
+.submenue{position:relative;}
+/****有二级菜单的li****/
+.show_submenue{padding:0 9px;border-right:1px solid #ededed;border-left:1px solid #ededed;background:#fff;}
+.showDiv{display:none;position:absolute;top:29px;left:-1px;background:#fff;
+		border:1px solid #ededed;border-top:none;}
+/**买家中心**/
+.buy .showDiv{width:106px;height:80px;padding:8px 3px;}
+.buy .showDiv a{height:45px;height:45px;line-height:45px;display:block;}
+.buy .showDiv a em{color:#FF3A90;margin-left:3px;}
+/*****手机商城******/
+.mobile .showDiv{width:130px;height:130px;padding:20px;}
+.mobile .showDiv img{width:130px;height:130px;}
+/******联系我们****/
+.lianxi .showDiv{width:100px;height:30px;}
+/*********************top_gk广告******************************/
+.top_gk{width:100%;height:auto;padding-top:10px;}
+.gk_img{width:1200px;height:auto;margin:0 auto;}
+.gk_img img{margin-bottom:10px;}
+/*********header头部，，搜索框，广告*******************/
+.header{padding:29px 0 22px 0;height:auto;}
+.logo{float:left;width:180px;height:50px;}
+.header p{float:left;margin-left:10px;width:154px;padding-left:10px;
+		height:44px;border-left:1px solid #eeeeee;line-height:44px;
+		color:#666666;}
+
+/*热搜*/
+.search_box{float:left;widht:540px,height:61px;padding:12px 0 0 56px;}
+.search{width:536px;height:32px;border:2px solid #c40000;}
+.search input{float:left;border:none;height:32px;line-height:32px;outline:none;}
+.search .put{width:446px;}
+.search .btn{width:90px;background:#c40000;color:#fff;}
+/*热搜*/
+.hot_search a{float:left;margin-right:15px;color:#999999;}
+.hot_search a:hover{text-decoration:underline;color:#FF3334;}
+.zhibao{width:180px;heihgt:60px;float:right;}
+.zhibao img{width:100%;height:100%;}
+/****************nav_box*导航栏，侧导航，导航，活动***********/
+.nav_box{height:32px;border-bottom:2px solid #c40000;position:relative;}
+.nav_box h2{float:left;width:200px;height:34px;color:#fff;background:#c40000;
+			font-size:12px;line-height:34px;text-align:center;}
+/***********nav**************/
+.nav{float:left;}
+.nav li{padding:0 20px;float:left;height:30px;line-height:30px;
+		font-size:15px}
+.nav li a{color:#333333;}
+.nav li a:hover{color:#ff3333;}
+/***********nav_gk************/
+.nav_gk{float:right;height:30px;line-height:30px;}
+.nav_gk a{color:#ff3333;font-size:15px;}
+/**************banner,侧导航，轮播，广告***************************/
+/*******侧导航******/
+.banner{height:410px;}
+.left_nav{float:left;position:relative;height:410px;width:200px;background:#2d2d2d;}
+.left_nav li{height:38px;width:199px;line-height:38px;margin-left:1px;
+			border-top:1px solid #3d3d3d;}
+.left_nav li i{float:left;width:20px;padding:13px 0 0 13px;}			
+.left_nav li a{color:#fff;margin:0 5px 0 2px;font-weight:900;}
+.left_nav li{color:#fff;font-weight:900;}
+.left_nav .left_nav_hover{color:#333;background:#fff;}
+.clock{height:70px;widht:200px;position:absolute;bottom:0;left:0;}
+.clock img{width:100%;height:100%;}
+/*******侧导航的详细信息*******/
+.left_nav li div{display:none;position:absolute;background:#fff;width:740px;height:400px;
+			top:10px;left:210px;opacity:0.98;}
+/*******轮播********/
+.focus{float:left;width:740px;height:400px;
+		margin:10px 10px 0 10px;background:red;}
+.banner_side{float:right;width:240px;height:410px;}
+.banner_side .notice{width:198px;height:150px;padding:15px 20px;
+					 border:1px solid #ededed;margin-top:10px;}
+	.notice-title{height:31px;}
+	.notice-list li{height:24px;line-height:24px;}
+	.notice-list li a{color:#666666;}
+	.notice-list li a:hover{color:#c40000;}
+/*********content_box商品展示**************/
+.content_box{height:auto;}
+.section{margin-top:10px;}
+.section .section_title{height:46px;}
+.section_title h2{float:left;height:46;line-height:46px;
+				font-size:24px}
+.section_title p{float:right;height:36px;padding-top:10px;}
+.section_title p a{color:#666666;}
+.section_title p a:hover{color:#666666;color:#c40000;
+						text-decoration:underline;}

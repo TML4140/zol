@@ -1,0 +1,10 @@
+/*****************************rest*********************************/
+
+html,body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,img,p,i,span{padding:0;margin:0;}
+h1,h2,h3,h4,h5,h6,strong{font-weight:100;}
+a{text-decoration:none;color:#925b2c;}
+img{border:0;display:block;}
+ul,li,ol{list-style:none;}
+body{font:12px/1.5 Arial;color:#333333;}
+i{font-style:normal;}
+.clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;s}
