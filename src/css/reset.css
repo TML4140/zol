@@ -24,17 +24,18 @@ i{font-style:normal;}
 .topmenu{float:right;height:29px;}
 .topmenu li{float:left;}
 .topmenu li a{padding:0 10px;float:left;height:29px;line-height:29px;}
-.topmenu .mobile{background:url(img/mobile.jpg) no-repeat left center;
+.topmenu .mobile{background:url(img/mobile.jpg) no-repeat 5px center;
 					padding-left:15px;}
 .submenue{position:relative;}
 /****有二级菜单的li****/
-.show_submenue{padding:0 9px;border-right:1px solid #ededed;border-left:1px solid #ededed;background:#fff;}
+.show_submenue{background:#fff;border-right:1px solid #ededed;border-left:1px solid #ededed;
+				margin-left:-2px;}
 .showDiv{display:none;position:absolute;top:29px;left:-1px;background:#fff;
 		border:1px solid #ededed;border-top:none;}
 /**买家中心**/
 .buy .showDiv{width:106px;height:80px;padding:8px 3px;}
 .buy .showDiv a{height:45px;height:45px;line-height:45px;display:block;}
-.buy .showDiv a em{color:#FF3A90;margin-left:3px;}
+.buy .showDiv a em{color:#FF3334;margin-left:3px;}
 /*****手机商城******/
 .mobile .showDiv{width:130px;height:130px;padding:20px;}
 .mobile .showDiv img{width:130px;height:130px;}
@@ -110,3 +111,13 @@ i{font-style:normal;}
 .section_title p a{color:#666666;}
 .section_title p a:hover{color:#666666;color:#c40000;
 						text-decoration:underline;}
+/***********精团list展示***************/
+.jtuan{width:1200px;height:auto;border-right:1px solid #ededed;
+		border-left:1px solid #ededed;}
+.jtuan_list li{float:left;border-top:1px solid #ededed;position:relative;
+				border-bottom:1px solid #ededed;width:300px;height:180px;}	
+.jtuan_list li img{width:300px;height:180px;}
+	/***通过.border的显示与否实现hover时边框的出现*******/
+.jtuan_list li .border{border-left:1px solid #ededed;border-bottom:2px solid #ff3334;
+						position:absolute;top:0;left:-1px;width:300px;height:178px;
+						display:none;border-right:1px solid #ededed;z-index:3;}					
