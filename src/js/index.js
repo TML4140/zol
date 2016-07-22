@@ -29,4 +29,33 @@ $(function(){
 			$(this).find('.border').hide();
 		});
 	});
+	//一元抢购中的li,hover出现二维码
+	$('.oneyuan_list li').each(function(){
+		$(this).hover(function(){
+			$(this).find('.erweima').show();
+			$(this).find('span').eq(0).hide();
+		},function(){
+			$(this).find('span').eq(0).show();
+			$(this).find('.erweima').hide();
+		});
+	});
+	//楼层中出去滚动的li,都有动画
+	$('.floorList li').not('.carousel').each(function(){
+		$(this).hover(function(){
+			//$(this).find('img').css({'marginTop':8});
+			$(this).find('img').stop().animate({'marginTop':6});
+		},function(){
+			$(this).find('img').stop().animate({'marginTop':12});
+		});
+	});
+	//品牌栏
+	$('.brand_list li').each(function(){
+		$(this).hover(function(){
+			//console.log(123);
+			$(this).addClass('hover');
+			
+		},function(){
+			$(this).removeClass('hover');
+		});
+	});
 });

@@ -7,4 +7,59 @@ img{border:0;display:block;}
 ul,li,ol{list-style:none;}
 body{font:12px/1.5 Arial;color:#333333;}
 i{font-style:normal;}
+.center{width:1200px;margin:0 auto;}
 .clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;s}
+/*****************************top***********************/
+.topbar{height:29px;width:100%;background:#f5f5f5;border-bottoom:1px solid #e6e6e6;}
+.wrapper {width:1200px;margin:0 auto;line-height:29px;}
+.logininfo{float:left;width:304px;height:29px;}
+.logininfo .no-padding{padding-right:0;}
+.wrapper .nocolorc a{color:#333333;}
+.logininfo span{float:left;padding-right:23px;}
+.wrapper span a{color:#3366cc;}
+.wrapper  a{font:12px Arial;color:#333333;}
+.wrapper  a:hover{text-decoration:underline;color:#c40000;}
+
+
+.topmenu{float:right;height:29px;}
+.topmenu li{float:left;}
+.topmenu li a{padding:0 10px;float:left;height:29px;line-height:29px;}
+.topmenu .mobile{background:url(img/mobile.jpg) no-repeat 5px center;
+					padding-left:15px;}
+.submenue{position:relative;}
+/****有二级菜单的li****/
+.show_submenue{background:#fff;border-right:1px solid #ededed;border-left:1px solid #ededed;
+				margin-left:-2px;}
+.showDiv{display:none;position:absolute;top:29px;left:-1px;background:#fff;
+		border:1px solid #ededed;border-top:none;}
+/**买家中心**/
+.buy .showDiv{width:106px;height:80px;padding:8px 3px;}
+.buy .showDiv a{height:45px;height:45px;line-height:45px;display:block;}
+.buy .showDiv a em{color:#FF3334;margin-left:3px;}
+/*****手机商城******/
+.mobile .showDiv{width:130px;height:130px;padding:20px;}
+.mobile .showDiv img{width:130px;height:130px;}
+/******联系我们****/
+.lianxi .showDiv{width:100px;height:30px;}
+/*********************top_gk广告******************************/
+.top_gk{width:100%;height:auto;padding-top:10px;}
+.gk_img{width:1200px;height:auto;margin:0 auto;}
+.gk_img img{margin-bottom:10px;}
+/*********header头部，，搜索框，广告*******************/
+.header{padding:29px 0 22px 0;height:auto;}
+.logo{float:left;width:180px;height:50px;}
+.header p{float:left;margin-left:10px;width:154px;padding-left:10px;
+		height:44px;border-left:1px solid #eeeeee;line-height:44px;
+		color:#666666;}
+
+/*热搜*/
+.search_box{float:left;widht:540px,height:61px;padding:12px 0 0 56px;}
+.search{width:536px;height:32px;border:2px solid #c40000;}
+.search input{float:left;border:none;height:32px;line-height:32px;outline:none;}
+.search .put{width:446px;}
+.search .btn{width:90px;background:#c40000;color:#fff;}
+/*热搜*/
+.hot_search a{float:left;margin-right:15px;color:#999999;}
+.hot_search a:hover{text-decoration:underline;color:#FF3334;}
+.zhibao{width:180px;heihgt:60px;float:right;}
+.zhibao img{width:100%;height:100%;}

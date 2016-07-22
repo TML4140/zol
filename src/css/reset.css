@@ -4,7 +4,7 @@ h1,h2,h3,h4,h5,h6,strong{font-weight:100;}
 a{text-decoration:none;color:#925b2c;}
 img{border:0;display:block;}
 ul,li,ol{list-style:none;}
-body{font:12px/1.5 Arial;color:#333333;}
+body{font:12px/1.5 "微软雅黑";color:#333333;}
 i{font-style:normal;}
 .clear:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;s}
 .center{width:1200px;margin:0 auto;}
@@ -104,11 +104,11 @@ i{font-style:normal;}
 /*********content_box商品展示**************/
 .content_box{height:auto;}
 .section{margin-top:10px;}
-.section .section_title{height:46px;}
+.section_title{height:46px;}
 .section_title h2{float:left;height:46;line-height:46px;
 				font-size:24px}
 .section_title p{float:right;height:36px;padding-top:10px;}
-.section_title p a{color:#666666;}
+.section_title p a{color:#666666;margin:0 10px;}
 .section_title p a:hover{color:#666666;color:#c40000;
 						text-decoration:underline;}
 /***********精团list展示***************/
@@ -120,4 +120,77 @@ i{font-style:normal;}
 	/***通过.border的显示与否实现hover时边框的出现*******/
 .jtuan_list li .border{border-left:1px solid #ededed;border-bottom:2px solid #ff3334;
 						position:absolute;top:0;left:-1px;width:300px;height:178px;
-						display:none;border-right:1px solid #ededed;z-index:3;}					
+						display:none;border-right:1px solid #ededed;z-index:3;}	
+/*********一元团购*********/	
+.oneyuan_title{background:url(img/oneyuan.png) no-repeat left center;}
+.oneyuan_list{padding:15px 0 0 15px;border:1px solid #ededed;width:1183px;height:171px;}
+.oneyuan_list li{float:left;height:163px;width:180px;
+				margin-right:16px;text-align:center;}	
+.oneyuan_pic{width:180px;height:135px;position:relative;}	
+.oneyuan_pic img{width:100%;height:100%;}	
+.oneyuan_pic span{height:32px;width:180px;display:block;background:#000;
+				opacity:0.5;left:0;bottom:0;position:absolute;
+				line-height:32px;color:#CCCCCC;}
+.erweima{width:180px;height:135px;position:absolute;display:none;
+		top:0;left:0;}
+.overlay{background:#000;opacity:0.5;width:100%;height:100%;}		
+.erweima img{width:99px;height:99px;position:absolute;
+				left:40px;top:25px;}
+.erweima span{display:block,width:140px;height:11px;position:absolute;
+			top:6px;left:40px;background:url(img/oneyuantext.png) no-repeat;}				
+.oneyuan_pic span b{color:#fff;}
+.oneyuan_text{height:18;margin-top:10px;line-height:18px;}	
+/****特色购***/	
+.special_text{border:1px solid #ededed;width:1198px;height:372px;}		
+.special_text .left{float:left;width:200px;height:372px;}
+.special_text .center{width:370px;float:left;border-left:1px solid #ededed;
+		border-right:1px solid #ededed;}
+.addheight{height:154px;width:370px;}
+.special_text .right{float:left;}
+.special_text .right li{float:left;}
+.special_text .down li{height:160px;}
+.special_text .right .last{width:210px;height:154px;}
+/******sec_mobile*********/
+.sectionfloor{width:1200px;height:533px;margin-top:30px;}
+.floor_text{height:420px;}
+.floor_text .main{float:left;}
+.floor_text .main img{width:360px;height:420px;}
+.floorList{float:left;width:840px;height:420px;}
+.floorList li{border:1px solid #ededed;margin:0px 0px -1px -1px;
+			width:160px;height:193px;float:left;
+			padding:16px 25px 0 24px;}
+.floorList .carousel{width:420px;height:209px;padding:0;
+					border-right:none;border-bottom:none;}
+.floorList .tall{height:192px;margin:0px 0px -1px -1px;}
+.title{height:20px;width:160px;}
+.title a{color:#333;}
+.title a:hover{color:#C40000;}			
+.floorList li p{height:20px;width:160px;color:#FF3333;}
+.floorList li img{width:160px;height:120px;margin-top:12px;}
+/****brand_list****/
+.brand_list{width:1188px;height:66px;margin-top:-1px;
+			border:1px solid #ededed;padding-left:10px;}
+.brand_list li{width:116px;float:left;height:60px;padding:3px 1px;
+				}
+.brand_list li img{width:116px;height:60px;}				
+.brand_list .hover{border-left:1px solid #ededed;width:116px;
+				border-right:1px solid #ededed;padding:3px 0;}	
+/******.bottom_gk******/
+.bottom_gk{height:90px;padding-top:20px;}
+/**************footer*****************/	
+.footer_up{margin-top:30px;border-top:1px solid #ededed;height:auto;}
+.footer_service{height:50px;padding:30px 0;}
+.footer_service li{line-height:50px;float:left;width:143px;height:50px;
+					padding-right:66px;}
+.footer_service li i{float:left;width:71px;height:50px;line-height:50px;}
+.footer_service li a{float:left;height:50px;color:#333333;font-size:16px;}
+.fs-relate{padding:20px 0;border-top:1px solid #ededed;}
+.fs-relate ul{float:left;width:175px;}	
+.fs-relate ul li{height:28px;line-height:28px;}
+.fs-relate ul li a {color:#666666;}
+.fs-relate ul .title{font-weight:900;color:#666;font-size:14px;}
+.fs-relate dl,dt,dd{float:left;}
+.fs-relate .hotline{padding-left:60px;background:url(img/hotline.png)no-repeat;}
+.fs-relate .hotline li{width:210px;height:28px;}
+.fs-relate .hotline .lastli{background:url(img/xinlang.png) no-repeat left center;
+							padding-left:27px;width:183px;}
