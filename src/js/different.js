@@ -1,0 +1,42 @@
+$(function(){
+	//放大镜选取图片
+	//让所有的小图片点击的时候更换当前选中的图片
+	$('.small_pic li').each(function(idx){
+		$(this).on('click',function(){
+			//大图变成当前的图片
+			$('.pic_desc').find('img').attr('src','../img/picdec_mid'+(idx+1)+'.jpg');
+			$(this).find('i').show();
+			$(this).siblings().find('i').hide();
+		});
+		//默认选中第一张图片
+		if(idx==0){
+			$(this).trigger('click');
+		}
+	});
+	//单品页的地址选取的时候 span hover时
+	//背景颜色改变，三角形也改变
+	//显示地址选择；
+	$('.chose_area_box').find('span').eq(0).hover(function(){
+		$(this).addClass('area_span_hover');
+		$(this).find('i').addClass('area_i_hover')
+	},function(){
+		$(this).removeClass('area_span_hover');
+		$(this).find('i').removeClass('area_i_hover')
+	});
+	//加入购物车市，选择购买的时候
+	$('.shoop').find('span').each(function(){
+		$(this).hover(function(){
+			$(this).addClass('hoverspan');
+		},function(){
+			$(this).removeClass('hoverspan');
+		});
+	});
+	$('.shoop').find('li').each(function(){
+		$(this).on('click',function(){
+			$(this).find('i').show();
+			$(this).find('span').addClass('clickspan');
+			$(this).siblings().find('i').hide();
+			$(this).siblings().find('span').removeClass('clickspan');				
+		});
+	});
+});

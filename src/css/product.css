@@ -1,0 +1,65 @@
+/****proinf-当前网页位置,产品详解,热门商品推荐*****/
+.location{height:32px;margin-left:8px;line-height:32px;
+		 color:#999999;font:12px/32px SimSun;}
+.location a{margin:0 8px;}
+.shoop_desc{border:1px solid #ededed;height:630px;width:1198px;}
+.left_desc{float:left;width:400px;hright:552px;padding:10px 0 0 20px;}
+.pic_desc{margin-bottom:10px;width:400px;height:400px;}
+.small_pic{height:70px;}
+.small_pic li{float:left;position:relative;}
+.small_pic li i,.small_pic li img{width:70px;height:70px;}
+.small_pic i{display:none;border:2px solid #CC0000;
+			position:absolute;top:-2px;left:-4px;}
+.share{width:400px;height:22px;padding:25px 0;}
+.share a{float:left;margin-right:15px;color:#666666;}
+.share a:hover{color:#c40000;text-decoration:underline;}
+.share a i{width:20px;height:20px;float:left;opacity:0.3;
+		background:#fff url(img/ico1.png) no-repeat -46px -290px;}
+.share a:hover i{opacity:1;}
+.share .share_i i{background:#fff url(img/ico1.png) no-repeat -46px -315px;}
+
+
+/******chose_buy*中间选择购买的参数区********/
+.chose_buy{float:left;width:530px;height:640px;padding:10px 20px 0 0;}
+.chose_buy h3{height:44px;padding-top:7px;font-size:16px;}
+.dap_gk{height:50px;margin-top:18px;}
+.dap_gk{background:url(img/danpin_gk.jpg) no-repeat;}
+.price{background:url(img/pricebg.png);width:510px;
+		padding:4px 10px;height:30px;line-height:30px;color:#999;}
+.price i{margin-right:100px;}
+.price span,.price strong{color:#c40000;}
+.price strong{font-size:30px;font-family:tahoma;}
+.confirm_inf dl{zoom: 1;width:510px;height:25px;line-height:25px;
+				margin:0 10px;padding-top:5px;}
+.confirm_inf dd{height:32px;width:440px;line-height:32px;}
+.chose_area_box	span{padding-left:6px;height:23px;line-height:23px;
+				border:1px solid #ededed;float:left;margin-right:10px;
+				}
+.chose_area_box strong{font-weight:900;margin-left:10px;}
+.chose_area_box	i{float:right;width:23px;height:23px;margin-right:6px;
+			background:url('img/areapng.png') no-repeat;}
+	/*单品页的地址选取的时候 span hover时
+	//背景颜色改变，三角形也改变*/
+/*显示地址的选择*/	
+.area_span_hover{color:#fff;background:#c40000;}	
+.chose_area_box .area_i_hover{background-position:0 -30px}
+
+.evaluate em{font-style: normal;color:#f33;margin-left:3px;
+			font-weight:900;}
+.evaluate span{margin:0 10px;}
+
+.service_bao i{color:#36c;margin:0 5px;}
+.service_bao .ddbg{background:url('img/ddbg.png')no-repeat;margin-left:55px;}
+	/*****加入购物车之前***颜色套餐的选择********/
+.shoop{width:510px;height:299px;border-top:1px solid #ededed;
+		margin:10px 10px 15px 10px;}
+.shoop .chose_color{width:510px;height:37px;line-height:40px;padding-top:15px;margin:0;}		
+.color_list li{position:relative;float:left;height:32px;margin:5px 5px 0 0;}
+.color_list li span{float:left;padding:0 10px;height:30px;
+					border:1px solid #ededed;}
+.shoop dd .hoverspan{border:2px solid #c40000;margin-top:-1px;height:29px;
+					margin-left:-1px;}
+.shoop dd .clickspan{border:2px solid #c40000;margin-top:-1px;height:29px;
+					margin-left:-1px;}						
+.shoop li i{position:absolute;border:6px solid #c40000; right:0;bottom:0;
+			display:none;border-left-color:transparent;border-top-color:transparent;}								
