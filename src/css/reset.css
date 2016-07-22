@@ -194,3 +194,15 @@ i{font-style:normal;}
 .fs-relate .hotline li{width:210px;height:28px;}
 .fs-relate .hotline .lastli{background:url(img/xinlang.png) no-repeat left center;
 							padding-left:27px;width:183px;}
+.fs-relate .coo{padding-left:60px;background:url(img/coop.png)no-repeat;}
+.fs-relate .coo li{width:145px;}	
+.fs-relate .coo .lastli{margin-top:5px;}
+.fs-relate .coo .lastli a{width:80px;height:26px;color:#fff;background:#FF3333;padding:5px;}	
+.coo .lastli a span{margin-right:5px;}
+
+/*******footer_down*************/
+.footer_down{background:#2d2d2d;padding:25px 0 30px 0;color:#CCCCCC;}	
+.footer_down a{color:#fff;margin:0 10px;}
+.partners{position:relative;width:1010px;padding:0 135px 0 55px;}
+.partners p{width:1010px;height:48px;}
+.partners span{position:absolute;left:0;top:0;}				
