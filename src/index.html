@@ -135,10 +135,14 @@
 				<img src='img/clock.gif'/>
 			</div>
 		</div>
+		<div class='index_bg'>
+			<span class='indexleft'></span>
+			<span class='indexright'></span>
+		</div>
 	</div>
 		<!--轮播-->
 	<div class='banner center'>
-		<div class='focus'>
+		<div class='focus' id='banner_carousel'>
 		</div>
 		<div class='banner_side'>
 			<a href='#'><img src='img/banner_side.jpg'/></a>
@@ -305,7 +309,8 @@
 					<a href='#'><img src='img/floor1.jpg'/></a>
 				</div>
 				<ul class='floorList'>
-					<li class='carousel'></li>
+					<li class='carousel' id='onefloor'>
+					</li>
 					<li class='tall'>
 						<div class='title'><a href='#'>乐视手机1S</a></div>
 						<p>5.5寸屏+镜面指纹+乐闪冲</p>
@@ -367,7 +372,7 @@
 					<a href='#'><img src='img/floor2.png'/></a>
 				</div>
 				<ul class='floorList'>
-					<li class='carousel'></li>
+					<li class='carousel' id='secondfloor'></li>
 					<li class='tall'>
 						<div class='title'><a href='#'>乐视手机1S</a></div>
 						<p>5.5寸屏+镜面指纹+乐闪冲</p>
@@ -429,7 +434,7 @@
 					<a href='#'><img src='img/floor3.jpg'/></a>
 				</div>
 				<ul class='floorList'>
-					<li class='carousel'></li>
+					<li class='carousel' id='threefloor'></li>
 					<li class='tall'>
 						<div class='title'><a href='#'>乐视手机1S</a></div>
 						<p>5.5寸屏+镜面指纹+乐闪冲</p>
@@ -491,7 +496,7 @@
 					<a href='#'><img src='img/floor4.png'/></a>
 				</div>
 				<ul class='floorList'>
-					<li class='carousel'></li>
+					<li class='carousel' id='fourfloor'></li>
 					<li class='tall'>
 						<div class='title'><a href='#'>乐视手机1S</a></div>
 						<p>5.5寸屏+镜面指纹+乐闪冲</p>
@@ -637,7 +642,44 @@
 			</ul>
 		</div>
 	</div>
+	<a class='index_diao' href='#'><img src='img/index_diao.png'/></a>
+	<div class='right_bar'>
+		<div class='right_bar_dl'>
+			<dl>
+				<dt class='order bar_hover'></dt>
+				<dd class='hide_bar'>我的订单</dd>
+			</dl>
+			<dl>
+				<dt class='like bar_hover'></dt>
+				<dd class='hide_bar'>我喜欢的</dd>
+			</dl>
+			<dl>
+				<dt class='zuji bar_hover'></dt>
+				<dd class='hide_bar'>我的足迹</dd>
+			</dl>
+			<dl>
+				<dt class='shoopcart bar_hover'></dt>
+				<dd class='hide_bar'>我的购物车</dd>
+			</dl>
+		</div>
+		<dl class='right_bar_bottom'>
+			<dt><a href='#'>建议反馈</a></dt>
+			<dd><a href='#'></a></dd>
+		</dl>
+	</div>
+	<div id='top_search'>
+		<div class='header clear' id='top_header'>
+			<h1 class='logo'><img src='img/logo.jpg'/></h1>
+			<div class='search_box'>
+				<form class='search' action='#'>
+					<input type='text' class='put'/>
+					<input type='submit' class='btn' value='搜索'/>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="assets/jquery-1.12.0.js"></script>
+	<script src="assets/jquery.tmlcarousel.js"></script>	
 	<script src="js/index.js"></script>
 </body>
 </html>

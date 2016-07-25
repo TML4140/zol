@@ -12,7 +12,7 @@ i{font-style:normal;}
 /*****************************top***********************/
 .topbar{height:29px;width:100%;background:#f5f5f5;border-bottoom:1px solid #e6e6e6;}
 .wrapper {width:1200px;margin:0 auto;line-height:29px;}
-.logininfo{float:left;width:304px;height:29px;}
+.logininfo{float:left;width:404px;height:29px;}
 .logininfo .no-padding{padding-right:0;}
 .wrapper .nocolorc a{color:#333333;}
 .logininfo span{float:left;padding-right:23px;}
@@ -77,6 +77,11 @@ i{font-style:normal;}
 .left_nav .left_nav_hover{color:#333;background:#fff;}
 .clock{height:70px;widht:200px;position:absolute;bottom:0;left:0;}
 .clock img{width:100%;height:100%;}
+/*************index_bg******************/
+.index_bg{width:1200px;height:0;}
+.index_bg span{position:absolute;top:32px;display:block;height:400px;width:350px;}
+.indexleft{left:-350px;background:url('img/indexleft.jpg');}
+.indexright{right:-350px;background:url('img/indexright.jpg');}
 /*******侧导航的详细信息*******/
 .left_nav li div{display:none;position:absolute;background:#fff;width:740px;height:400px;
 			top:10px;left:210px;opacity:0.98;}
@@ -92,8 +97,8 @@ i{font-style:normal;}
 /**************banner,侧导航，轮播，广告***************************/
 .banner{height:410px;}
 /*******轮播********/
-.focus{float:left;width:740px;height:400px;
-		margin:10px 10px 0 210px;background:red;}
+.focus{float:left;width:740px;height:400px;overflow: hidden;
+		margin:10px 10px 0 210px;background:red;position:relative;}
 .banner_side{float:right;width:240px;height:410px;}
 .banner_side .notice{width:198px;height:150px;padding:15px 20px;
 					 border:1px solid #ededed;margin-top:10px;}
@@ -159,8 +164,9 @@ i{font-style:normal;}
 .floorList li{border:1px solid #ededed;margin:0px 0px -1px -1px;
 			width:160px;height:193px;float:left;
 			padding:16px 25px 0 24px;}
-.floorList .carousel{width:420px;height:209px;padding:0;
-					border-right:none;border-bottom:none;}
+.floorList .carousel{width:420px;height:208px;padding:0;
+					border-right:none;}
+.floorList .carousel li{border:none;padding:0;}
 .floorList .tall{height:192px;margin:0px 0px -1px -1px;}
 .title{height:20px;width:160px;}
 .title a{color:#333;}
@@ -192,12 +198,13 @@ i{font-style:normal;}
 .fs-relate dl,dt,dd{float:left;}
 .fs-relate .hotline{padding-left:60px;background:url(img/hotline.png)no-repeat;}
 .fs-relate .hotline li{width:210px;height:28px;}
-.fs-relate .hotline .lastli{background:url(img/xinlang.png) no-repeat left center;
+.fs-relate .hotline .lastli {background:url(img/xinlang.png) no-repeat left center;
 							padding-left:27px;width:183px;}
 .fs-relate .coo{padding-left:60px;background:url(img/coop.png)no-repeat;}
 .fs-relate .coo li{width:145px;}	
 .fs-relate .coo .lastli{margin-top:5px;}
 .fs-relate .coo .lastli a{width:80px;height:26px;color:#fff;background:#FF3333;padding:5px;}	
+.fs-relate .coo .lastli a:hover{background:#c40000;}
 .coo .lastli a span{margin-right:5px;}
 
 /*******footer_down*************/
@@ -214,3 +221,29 @@ i{font-style:normal;}
 .copyright li a{color:#ccc;}
 .warning {padding-top:14px;}
 .warning li{float:left;margin-right:7px;height:32px;}
+/***********最后添加的***************/
+.index_diao{position:fixed;left:-40px;bottom:200px;}
+.index_diao:hover{left:-10px;}
+.right_bar{width:37px;background:#2d2d2d;position:fixed;top:0;right:0;z-index:5;}
+.bar_hover{float:left;background:url('img/indexbg.png') no-repeat;
+			width:37px;height:37px;}
+.like{background-position:0 -37px;}
+.zuji{background-position:0 -78px;}
+.shoopcart{background-position: 0 -121px;}
+.bar_list{margin-top:100px;}
+.right_bar_dl dl{position:relative;width:37px;height:37px;margin-bottom:12px;}
+.right_bar_dl dl dd{position:absolute;top:0;right:37px;display:none;}
+.hide_bar{width:70px;height:37px;position:relative;right:0;height:37px;width:37;
+			background:#FF3333;float:left;line-height:37px;text-indent:20px;color:#fff;}
+.right_bar_dl{margin-top:60px;}
+.right_bar_bottom{position:absolute;bottom:0px;width:37px;height:72px;}
+.right_bar_bottom a{color:#fff;}
+.right_bar_bottom dt{height:31px;font-size:14px;padding-left:5px;margin-bottom:6px;}
+.right_bar_bottom dd a{background:url('img/indexbg.png') no-repeat 0 -185px;
+					height:30px;width:37px;display:block;margin-top:6px;}
+.right_bar_bottom dd a:hover{background:#FF3333 url('img/indexbg.png') no-repeat 0 -185px;}					
+#top_search{background:#fff;width:100%;height:55px;position:fixed;top:0;z-index:0;display:none;}
+#top_header{padding:0;width:1200px;margin:0 auto;}
+#top_header .search{width:617px;}
+#top_header .search_box{width:600px;padding-left:134px;}
+#top_header .put{width:527px;}

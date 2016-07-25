@@ -58,4 +58,44 @@ $(function(){
 			$(this).removeClass('hover');
 		});
 	});
+	//.right_bar
+	$(window).resize(function(){
+		$('.right_bar').css({'height':$(window).height()});
+	});
+	$('.right_bar').css({'height':$(window).height()});
+	$('.bar_hover').each(function(idx){
+		$(this).hover(function(){
+			$(this).css(
+				{
+					'backgroundColor':'#FF3333',
+			 		'backgroundImg':'url(img/indexbg.png)',
+			 		'backgroundPosition':'0px '+(-37*idx)+'px'
+			 	});
+			$(this).next().show(400);
+			$(this).parent().siblings().find('dd').hide();
+			$(this).find('.hide_bar').animate({'width':100});
+		},function(){
+			$(this).css({
+					'backgroundColor':'#2D2D2D',				
+			});
+			$(this).next().hide();
+		});
+	});
+	$(window).scroll(function(){
+		if(($('.content_box').offset().top-$(window).scrollTop())<0){
+			$('#top_search').show();
+		}else{
+			$('#top_search').hide();
+		}
+	});
+	/*************轮播插件的调用****************/
+	var imgSrc=['banner1.jpg','banner2.jpg','banner3.jpg','banner4.jpg','banner5.jpg','banner6.jpg'];
+	$('#banner_carousel').tmlCarousel(imgSrc);
+	imgSrc=['onefloor1.jpg','onefloor2.jpg','onefloor3.jpg']
+	$('#onefloor').tmlCarousel(imgSrc,false);
+	imgSrc=['secondfloor1.png','secondfloor2.png'];
+	$('#secondfloor').tmlCarousel(imgSrc,false);
+	$('#threefloor').tmlCarousel(imgSrc,false);
+	imgSrc=['onefloor1.jpg','onefloor2.jpg','onefloor3.jpg']
+	$('#fourfloor').tmlCarousel(imgSrc,false);
 });

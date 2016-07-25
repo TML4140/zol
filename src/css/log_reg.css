@@ -1,0 +1,93 @@
+.login_center{width:990px;margin:0 auto;}
+.loginbody{background:#FAFAFA;}
+.login_header{width:990px;height:60px;padding:14px 0 20px 0;font-size:14px}}
+.login_header a{float:left;height:60px;width:357px;}
+.login_header h1{float:left;margin:0;padding:0;}
+.login_header p{float:left; width:154px;height:44px;padding-left:10px;
+				margin:10px 0 0 10px;border-left:1px solid #ededed;
+			   line-height:44px;}
+.register_bar{float:right;width:216px;height:22px;padding-top:21px;}
+.register_bar a{color:#CC0000;}
+
+.login{width:988px;height:350px;margin-top:26px;border:1px solid #E6E6E6;}
+.login_add{float:left;}
+.login_layer{float:right;margin-right:85px;}
+.header_login{height:28px;padding-top:20px;width:294px;line-height:28px;}
+.header_login h3{float:left;font:18px/28px "Microsoft YaHei";width:189px;}
+.header_login a{width:84px;padding-left:17px;float:right;
+				background:url('img/loginbg.png')no-repeat -276px -112px;
+				}
+.login_content{width:290px;height:172px;margin-top:30px;}
+.input_item{width:278px;height:22px;padding:8px 5px;
+			border:1px solid #E6E6E6;margin-bottom:10px;}
+.input_item	input{display: block;width: 278px;height: 22px;font: 14px/22px "Arial";
+  				border: 0 none;background:#FAFAFA;outline: none;}
+.forget{height:290px;height:18px;margin-bottom:17px;float:right;}  
+.submit input{width:290px;height:40px;margin-bottom:10px;color:#fff;outline: none;
+			background:url('img/loginbg.png');border:none;font-size:14px;}				
+.panters{height:38px;margin-top:15px;}
+.panters a{float:left;width:38px;height:38px;margin-right:12px;}
+.panters span{float:left;line-height:38px;}
+.sina{background:url('img/loginbg.png') no-repeat 0 -81px;}
+.qq{background:url('img/loginbg.png') no-repeat -40px -81px;}
+.zhi{background:url('img/loginbg.png') no-repeat -78px -81px;}
+.baidu{background:url('img/loginbg.png') no-repeat -116px -81px;}
+.sina:hover{background:url('img/loginbg.png') no-repeat 0 -121px;}
+.qq:hover{background:url('img/loginbg.png') no-repeat -40px -121px;}
+.zhi:hover{background:url('img/loginbg.png') no-repeat -78px -121px;}
+.baidu:hover{background:url('img/loginbg.png') no-repeat -116px -121px;}
+/***************footer****************/
+.login_footer{width:1261px;height:83px;padding:12px 0 25px 0;
+				margin-top:70px;border-top:1px solid #E6E6E6;}
+.about a{margin:0 10px;color:#666666;}				
+.about{float:left;color:#cccccc;}
+.login_copyright{float:right;padding:0;}
+
+
+
+/****************************注册页面*******************************/
+.register_wapper{width:980px;height:auto;padding-bottom:100px;
+				border:1px solid #E6E6E6;}
+.reg_title{width:890px;height:28px;padding:16px 0 16px 90px;
+			background:#FAFAFA;color:#999;font-size: 18px;}
+.reg_inf{width:500px;height:572px;padding:30px 0 0 89px;float:left;}
+/*注册的信息*/
+.register-tab{width:500px;height:39px;border-bottom:1px solid #e6e6e6;}
+.register-tab li{width:250px;height:36px;border:1px solid #e6e6e6;
+				border-bottom:none;border-top:2px solid #E02D2D;
+				padding-bottom:2px;background:#fff;margin-top:-1px;
+				text-align:center;color:#CC0000;font-size:18px;
+				line-height:36px;}
+.phone-number{background:url('img/reg_bg.png') no-repeat -158px -235px;
+				padding-left:20px;height:36px;display:inline-block;}				
+.phone_reg{width:500px;padding-top:30px;height:auto;}
+.reg-input{height:40px;position:relative;width:417px;padding-left:83px;
+		  margin-bottom:42px;line-height: 40px;}
+.label{width:83px;position:absolute;right:417px;font-size:16px;
+		text-align:right;color:#666666;}
+.reg-input input{width:278px;height:22px;padding:8px 5px;margin-right:10px;
+				margin-right:10px;border:1px solid #e6e6e6;outline:none;}
+.reg-input	i{position:absolute;left:383px;padding-left:20px;top:0px;width:250px;}
+.reg-input .right{background:url('img/reg_bg.png') no-repeat -155px -150px;height:30px;}	
+.reg-input .wrong{background:url('img/reg_bg.png') no-repeat -155px -184px;height:30px;}		
+.label em{color:#FF3300;margin-right:5px;}
+.pic_ma,.mes_ma{border:1px solid #e6e6e6;width:108px;height:38px;
+				position:absolute;right:130px;top:0;}
+
+.mes_ma{background:#F8F8F8;text-align:center;}
+				.reg-input .tips{color:#aaa;}
+.agreement{padding-left:83px;width:417px;height:32px;}
+.reg_sub{margin-top:20px;padding-left:83px;}
+.phone_reg .yan input{width:158px;}
+
+
+
+
+.fast_login{width:170px;height:255px;padding:0 80px 0 25px;
+			float:right;margin-top:30px;border-left:1px solid #E6E6E6;}
+.fast_login p{height:48px;line-height:24px;}
+.fast_login p a,.agreement a{color:#134BA0;margin-left:3px;}
+.fast_login p a:hover,.agreement a:hover{color:#c40000;text-decoration:underline;}
+.fast-login-list a{display:block;width:170px;height:36px;margin-top:15px;
+					color:#fff;background:url('img/reg_bg.png') no-repeat;}
+.fast-login-list a:hover{opacity: 0.7;}
