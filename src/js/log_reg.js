@@ -6,7 +6,7 @@ $(function(){
 		$(this).css({'backgroundPosition':'0 0'});
 	});
 	//点击的时候该表器内部的。。。
-	$('.submit').find('input').click(function(){
+	$('.login_sum').find('input').click(function(){
 		$(this).val('登录中....');
 	});
 	//给快速登录的a加背景图片
@@ -26,13 +26,32 @@ $(function(){
 		if(/^1[34578]\d{9}$/.test(strPhone)){
 			if($(this).next('i').hasClass('wrong')){
 				$(this).next('i').removeClass();
+				serverPhoneNum(strPhone);
 			}
 			$(this).next('i').addClass('right').html(' ').show();
 		}else{
 			$(this).next('i').html(' ').addClass('wrong').html('请填写有效的11位手机号码').show();
 		}
 	});
-	
+	var host = 'http://localhost:3000';
+	/*function serverPhoneNum(phonenum){
+				$.ajax({
+					url:'http://localhost:3000/ajax/checkname',
+					data:{regname:'123'},
+					success:function(res){
+						// 已注册
+						console.log(res);
+					}
+				})*/
+			/*	$.ajax({
+					url:'http://localhost:3000/ajax/chat?type=send',
+					type:'post',
+					data:{phonenum:123},
+					success:function(res){
+						console.log(res);
+					}
+				});*/
+	}
 	//密码
 	$('.passW').find('input').on('blur',function(){
 		var strPass=$('.passW').find('input').val();
@@ -69,21 +88,40 @@ $(function(){
 	$('.pic_yan').find('input').on('blur',function(){
 		var strMa=$(this).val();
 		if(strMa==yanArr[num].strMa){
-			$('.pic_yan').find('.wrong').html('').hide();
-			$('.pic_yan').find('.right').show();			
+			if($('.pic_yan').find('i').hasClass('wrong')){
+				$('.pic_yan').find('i').removeClass('wrong');
+			}			
+			$('.pic_yan').find('i').addClass('right').html('').show();
 		}else{
 			num=Math.floor(5*Math.random());
 			picStr=yanArr[num].src;
 			$('.pic_ma').find('img').attr('src','../img/'+yanArr[num].src);
-			$('.pic_yan').find('.right').hide();
-			$('.pic_yan').find('.wrong').html('').html('验证码不正确，请重新输入').show();
+			if($('.pic_yan').find('i').hasClass('right')){
+				$('.pic_yan').find('i').removeClass('right');
+			}
+			$('.pic_yan').find('i').addClass('wrong').html('').html('验证码不正确，请重新输入').show();
 		}
+	});
+	//短信验证
+	$('.mes_yan').find('input').on('blur',function(){
+		$('.mes_yan').find('i').addClass('right').html('').show();
 	});
 	//提交
 	
 	$('.reg_sub').find('input').on('click',function(){
-		
-		console.log($('.phone_reg').find('input').length);
-		console.log($('.phone_reg').find('.right').length);
+	
+		var inputLen=$('.phone_reg').find('input').length;
+		var rightLen=$('.phone_reg').find('.right').length;
+		console.log(rightLen);
+		if(inputLen-1!=rightLen){
+			$('.phone_reg').find('i').each(function(){
+				if(!$(this).hasClass('right')){
+					$(this).addClass('wrong').show();
+				}
+			});
+			return false;
+		}
+		//？？？？
+		window.location.href='login.html';
 	});
 });

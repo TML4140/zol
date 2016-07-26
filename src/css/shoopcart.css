@@ -1,0 +1,84 @@
+em{color:#FF0000;font-style:normal;}
+.cart_center{width:960px;margin:0 auto;}
+.cart_header{width:960px;height:40px;padding:30px 0;}
+.cart_header a{float:left;}
+.cart_header h1{float:left;}
+.cart_header p{float:left;line-height:40px;font-size:14px;color:#999;height:40px;}
+/*******操作步骤********/
+.steps{float:right;}
+.steps li{float:left;width:90px;height:36px;padding-right:14px;line-height:36px;
+		font:14px/36px "Microsoft YaHei";text-align: center;
+		background:#e6e6e6 url('img/shoopbg.png')no-repeat 100% -74px;}
+.steps .s5{background:#e6e6e6;padding:0;}
+/*************所有购物车的操作*************/
+.total{margin-top:10px;height:57px;text-align: right;}
+.total p{padding:7px 0 10px 0;height:18px;line-height:18px;}
+.total_price{height:22px;color:#999999;}
+.total_price input{background:url('img/shoopcartbg.png') no-repeat -192px -150px;
+					float:right;width:58px;height:22px;border:none;line-height:22px;
+					color:#fff;}
+.total_price em{margin-right: 2px;font-weight: 900;}
+.total_price .total-cart-price{margin-right:10px;font-size:14px;}
+.shoopcart_list{width:960px;margin-top:20px;}
+.shoopcart_list ul{width:100%;border-spacing: 0;height:36px;
+					line-height:36px;}
+.shoopcart_list	.title_list{background:#f5f5f5;border-top:2px solid #e02d2d;}
+.shoopcart_list li{float:left;}
+.th-1{width:65px;}
+.th-2{width:233px;padding-left:100px;}
+.th-3{width:128px;}
+.th-4{width:112px;}
+.th-5{width:126px;}
+.th-6{width:112px;}
+.th-7{width:84px;}
+.shoopcart_list thead tr{height:36px;background: ;text-align:left;
+						text-align: center;}
+.shoopcart_list .shoop_inf{height:43px;padding-top:10px;line-height:43px;}
+.shoop_inf td{}
+.shopname{float:left;}
+.contact{float:left;padding:11px 0 0 15px;}
+.shoopcart_list	.shoop_store{height:109px;border:1px solid #ededed;width:958px;
+		padding:10px 0;}
+.goodinf{width:377px;height:108px;padding:0 10px 0 12px;}
+.goodinf input{margin:24px 10px 0 0;float:left;}
+.goodinf .pic{width:80px;height:60px;border:1px solid #CCCCCC;float:left;}
+.goodinf img{width:80px;height:60px;}
+.text_inf {line-height: 20px;float:left;width:240px;padding-left: 10px;}
+.shoop_zhibao {width:84px;height:16px;background:url('img/shoopcartbg.png') no-repeat 0 -287px}
+.shoop_zhibao a{float:left;width:16px;height:16px;margin-right:5px;}
+.price{width:110px;height:108px;padding:0 10px;line-height: 108px;text-align: center}
+.count{width:94px;height:28px;padding:45px 0;}
+.count span{padding:0 10px;margin:-8px 4px;float:left;}
+.count .num{float:left;width:20px;height:16px;outline: none;}
+.count	.jiaonum{float:right;}
+.jianprice{width:48px;height:28px;padding:40px 80px 40px 0;text-align:center;}
+.s-total{width:34px;height:28px;padding:40px 35px;}
+.del{width:66px;height:48px;padding:30px 10px;line-height: 24px;}
+
+
+
+
+
+
+/************可能喜欢的列表*****************/
+.like{margin-top:20px;}
+.likeList{height:35px;border-bottom: 1px solid #e6e6e6;}
+.likeList li{height:34px;width:129px;border:1px solid #e6e6e6;border-bottom:none;
+			border-top:2px solid #c40000;background:#fff;line-height:34px;
+			font:16px/33px "Microsoft YaHei";text-align:center;}
+.maylike{width:958px;height:208px;border:1px solid #e6e6e6;border-top:none;}
+.goodsList{width:944px;height:175px;padding:20px 0 30px 14px;}
+.goodsList li{float:left;width:162px;height:175px; padding:0 13px;}
+.goodsList li img{width:160px;height:120px;border:1px solid #e6e6e6;}
+.goodsList .price{height:24px;color: #ff0000;font-size: 16px;font-family:Verdana;
+					font-weight: bold;line-height: 24px;}
+/***********footer***************/
+.cart_footer{width:960px;height:115px;padding:5px 0 20px 0;margin-top:50px;
+				border-top:1px solid #e6e6e6;}
+.cart_footer p{text-align:center;}				
+.links{width:960px;height:18px;padding:14px 0 6px 0;color:#D5CCD5;}	
+.cart_footer p a{margin:0 10px;color:#134BA0;}
+.cart_footer p a:hover{color:#f60;}
+.authentication{height:46px;padding-top:12px;text-align: center;}
+.authentication a{margin-right:8px;display:inline-block;}
+.authentication a img{width:108px;height:40px;}

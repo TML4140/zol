@@ -1,0 +1,98 @@
+.decprice{height:auto;}
+.hd{height:1px;padding:20px 0;}
+.title{border-bottom:1px solid #ededed;margin: 0 auto;position: relative;width: 274px;}
+.title span{background: #fff none repeat scroll 0 0;color: #666;
+    font: 18px/40px "Microsoft YaHei","微软雅黑";left: 50%;margin: 0 0 0 -87px;
+    padding: 0 15px;position: absolute;top: -20px;}
+/*************减价商品**************/
+.decprice_list{padding-top:8px;width:1200px;}
+.decprice_list li{float:left;width:285px;height:214px;margin-right:20px;}
+.decprice_list li img{float:left;width:285px;height:214px;}
+.decprice_list .last{margin:0;}
+.decprice .search_box{width:1200px;padding:50px 0 20px;}
+.decprice .search_box .search{margin:0 auto;}
+.fs-relate li{border:none;}
+/*************品牌滚动****************/
+.brand_carousel{margin-top:10px;width:1198px;height:168px;border:1px solid #ededed;}
+.brand_carousel dt{float:left;width:170px;height:138px;padding:15px 20px; 
+					border-right:1px solid #e6e6e6;text-align: center;}
+.brand_carousel dt img{width:160px;height:80px;}
+.brand_carousel dt span{font-size: 16px;font-weight: 900;line-height: 18px;}	
+.brand_carousel dd{width:957px;height:147px;padding:15px;position:relative;}
+.changebox{width:957px;height:117px;position:absolute;}
+.pre,.next{width:21px;height:37px;padding:15px 9px;display:block;background:#fff;
+		  position:absolute;top:50%;margin-top:-33px;z-index:5;}
+.pre:hover,.next:hover{background-color:#999;}									
+.brand_carousel dd .next{left:918px;}
+.brand_carousel dd .next i{background-position:-51px 0; }
+.brand_carousel dd .pre{right:918px;}	
+.brand_carousel dd i{width:20px;height:37px;background:url('img/huaweibg.png') no-repeat;
+					display:block;}	
+.brand_list{margin-left:30px;width:900px;height:117px;overflow:hidden;position:relative;}
+.brandlist{position:absolute;top:0;left:0;}	
+.brand_list li{padding:0 30px;width:120px;height:117px;float:left;}	
+.brand_list li a{float:left;width:120px;height:117px;}
+.brand_list li 	p{width:120px;height:40px;margin-bottom:6px;text-align: center;
+					line-height:20px;}			
+/****************crumbs_bar***********/
+.crumbs_bar{margin-top:20px;height:26px;}
+.huawei_total{float:right;}
+.huawei_total em{font-style:normal;color:#c40000;margin:0 5px;}
+.crumbs_list{float:left;height:26px;}
+.crumbs_list li{float:left;line-height:26px;font-size: 14px;}
+.crumbs_list .gt{width:6px;height:26px;padding: 0 10px 0 0;font-family:SimSun; color: #999}
+.crumbs_list li .home{margin-right: 10px;}
+.group{position:relative;height:24px;padding-right:10px;}
+.group span{padding:0 26px 0 12px;height:24px;border:1px solid #ededed;
+			display:block;position:relative;z-index:10;}
+.group  .hover{border:1px solid #c40000;border-bottom:0;height:27px;background:#fff;}			
+.group span i{position:absolute;padding:0 8px 0 5px;height:8px;display:block;top:10px;right:8px;
+				background:url('img/ico.png') 0 -14px;}
+.huawei span i{background-position: 0 -22px;padding-top:5px;}
+.huawei .hover{border:1px solid #c40000;}
+.huawei .hover i{background-position: 0 -35px;padding-top:5px;}
+.huawei em{color:#FF3333;font-style:normal;}			
+.group_list{border:1px solid #c40000;position:absolute;top:27px;left:0px;padding:5px 0;
+			background:#fff;z-index:5;overflow: hidden;width:417px;display:none;
+			}	
+.phone 	.group_list{width:139px;}					
+.group_list ul{padding:0 2px;border-left:1px dashed #ededed;
+				float:left;margin-left:-2px;width:135px;font-size:12px;}
+.group_list ul li{padding:0 10px;display:block;}	
+/**************选择器的selector**************/
+.selector{margin-top:20px;padding-bottom:19px;}	
+.select_box{width:1196px;border:2px solid #e6e6e6;position:relative;}	
+.click{height:5px;background:#F7F7F7;position:relative;}
+.show_more span{position:absolute;left:50%;margin-left:-60px;width:120px;top:5px;
+				height:28px;display:block;text-align:center;z-index: 5;line-height:25px;
+				background:#f7f7f7 url('img/ico.png')no-repeat 80% -90px;}
+.show_little span{position:absolute;left:50%;margin-left:-60px;width:120px;top:5px;
+				height:28px;display:block;text-align:center;z-index: 5;line-height:25px;
+				background:#f7f7f7 url('img/ico.png')no-repeat 80% -110px;}				
+.select_item{height:39px;display:none;}	
+.select_item dl{height:38px;line-height:38px;margin-top:-1px;}
+.select_item dt{float:left;width:94px; height:38px;border-right:1px solid #E6E6E6;
+				 padding-right:15px;background:#F7F7F7;text-align:right;}
+.select_item dd{height:37px;float:left;width:1046px;margin:0 20px;border-top:1px solid #E6E6E6; }
+.select_item_list li{float:left;padding-right:30px;}
+/***********最后添加的***************/
+.index_diao{position:fixed;left:-40px;bottom:200px;}
+.index_diao:hover{left:-10px;}
+.right_bar{width:37px;background:#2d2d2d;position:fixed;top:0;right:0;z-index:5;}
+.bar_hover{float:left;background:url('img/indexbg.png') no-repeat;
+			width:37px;height:37px;}
+.like{background-position:0 -37px;}
+.zuji{background-position:0 -78px;}
+.shoopcart{background-position: 0 -121px;}
+.bar_list{margin-top:100px;}
+.right_bar_dl dl{position:relative;width:37px;height:37px;margin-bottom:12px;}
+.right_bar_dl dl dd{position:absolute;top:0;right:37px;display:none;}
+.hide_bar{width:70px;height:37px;position:relative;right:0;height:37px;width:37;
+			background:#FF3333;float:left;line-height:37px;text-indent:20px;color:#fff;}
+.right_bar_dl{margin-top:60px;}
+.right_bar_bottom{position:absolute;bottom:0px;width:37px;height:72px;}
+.right_bar_bottom a{color:#fff;}
+.right_bar_bottom dt{height:31px;font-size:14px;padding-left:5px;margin-bottom:6px;}
+.right_bar_bottom dd a{background:url('img/indexbg.png') no-repeat 0 -185px;
+					height:30px;width:37px;display:block;margin-top:6px;}
+.right_bar_bottom dd a:hover{background:#FF3333 url('img/indexbg.png') no-repeat 0 -185px;}					

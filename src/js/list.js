@@ -1,0 +1,96 @@
+$(function(){
+		//.right_bar
+	$(window).resize(function(){
+		$('.right_bar').css({'height':$(window).height()});
+	});
+	$('.right_bar').css({'height':$(window).height()});
+	$('.bar_hover').each(function(idx){
+		$(this).hover(function(){
+			$(this).css(
+				{
+					'backgroundColor':'#FF3333',
+			 		'backgroundImg':'url(img/indexbg.png)',
+			 		'backgroundPosition':'0px '+(-37*idx)+'px'
+			 	});
+			$(this).next().show(400);
+			$(this).parent().siblings().find('dd').hide();
+			$(this).find('.hide_bar').animate({'width':100});
+		},function(){
+			$(this).css({
+					'backgroundColor':'#2D2D2D',				
+			});
+			$(this).next().hide();
+		});
+	});
+	$('.right_bar').css({'height':$(window).height()});
+	/********************列表页面的品牌滚动*****************/
+	//滚动是，不会自动滚动，
+	//点击<向左滚动，点击>向右滚动；
+	console.log($('.brandlist li').width());
+	$('.brandlist').css({
+	    'width':$('.brandlist li').width()*$('.brandlist li').length
+	});
+	$('.brand_carousel .change').each(function(){
+			$(this).on('click',function(){
+				//点击了向左移动
+				if($(this).index()==0){
+					var left=parseInt($('.brandlist').css('left'));
+					console.log();
+					console.log(left);
+					if(left<=-2700){
+						$('.brandlist').animate({'left':left-0});
+					}else{
+						$('.brandlist').animate({'left':left-900});
+					}
+				}else{
+					//点击了向右移动
+					var left=parseInt($('.brandlist').css('left'));
+					if(left>=0){
+						$('.brandlist').animate({'left':left+0});
+					}else{
+						$('.brandlist').animate({'left':left+900});
+					}
+				}
+		});
+	});
+	/************group在品牌滚动的下面的当前网页的地址************************/
+	$('.group').not(':last').each(function(){
+		$(this).hover(function(){
+			$(this).find('span').addClass('hover');
+			$(this).find('.group_list').show();
+		},function(){
+			$(this).find('.group_list').hide();
+			$(this).find('span').removeClass('hover');
+		});
+	});
+	$('.huawei').hover(function(){
+		console.log(123);
+		$(this).find('span').addClass('hover');
+	},function(){
+		$(this).find('span').removeClass('hover');
+	});
+	/****************初始的只显示2个*******************/
+	function showlittle(){
+		$('.select_item').each(function(){
+			if($(this).index()<=1){
+				$(this).show();
+			}else{
+				$(this).hide();
+			}
+		});
+	}
+	showlittle();
+	$('.selector .click').on('click',function(){
+		if($(this).hasClass('show_more')){
+			$(this).addClass('show_little');
+			$(this).removeClass('show_more');
+			$(this).find('span').text('收起');
+			$('.select_item').show();
+		}else{
+			$(this).addClass('show_more');
+			$(this).removeClass('show_little');
+			$(this).find('span').text('更多选项');
+			showlittle();
+		}
+	});
+});

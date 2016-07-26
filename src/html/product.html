@@ -7,6 +7,8 @@
 	<link href="../css/product.css" type="text/css" rel="stylesheet">
 	<script src="../assets/jquery-1.12.0.js"></script>
 	<script src="../js/common.js"></script>
+	<script src="../assets/cookie1603.js"></script>
+	
 	<script src="../js/different.js"></script>
 </head>
 <body>
@@ -15,8 +17,8 @@
 		<div class='wrapper'>
 			<div class='logininfo'>
 				<span class='nocolorc'><a href='index.html'>商城首页</a></span>
-				<span>Hi~欢迎来到ZOL商城，请<a href='#'>登录</a></span>
-				<span class='no-padding'><a href='#'>免费注册</a></span>
+				<span>Hi~欢迎来到ZOL商城，请<a href='login.html'>登录</a></span>
+				<span class='no-padding'><a href='register.html'>免费注册</a></span>
 			</div>
 			<ul class="topmenu">
 				<li><a href="#">我的订单</a></li>
@@ -86,8 +88,19 @@
 					<a href='#'>手机通讯</a>/<a href="#">手机配件</a>
 					<div>
 						<dl class="service">
-                            <dt><a target="_blank" href="#">服务保障</a></dt>
-                            <dd><a target="_blank" href="#"><i class="iconfont"></i>行货保证</a><a href="#"><i class="iconfont"></i>发票保障</a><a target="_blank" href="#"><i class="iconfont"></i>顺丰包邮</a><a target="_blank" href="#"><i class="iconfont"></i>无忧退换</a><a target="_blank" href="#"><i class="iconfont"></i>先行赔付</a></dd>
+                            <dt><a  href="#">服务保障</a></dt>
+                            <dd>
+                            	<a  href="#">
+                            		<i class="iconfont"></i>行货保证</a>
+                            	<a href="#">
+                            		<i class="iconfont"></i>发票保障</a>
+                            	<a  href="#">
+                            		<i class="iconfont"></i>顺丰包邮</a>
+                            	<a  href="#">
+                            		<i class="iconfont"></i>无忧退换</a>
+                            	<a  href="#">
+                            		<i class="iconfont"></i>先行赔付</a>
+                            </dd>
                         </dl>
 					</div>
 				</li>
@@ -185,8 +198,16 @@
 						</dt>
 						<dd>
 							<div class='chose_area_box'>
-								<span>呼和浩特<i></i></span>
+								<span><em>重庆</em><i></i></span>
 								可送达,<strong>顺丰包邮</strong>
+								<div class='citybox'>
+									<ul class='cityclassfy'>
+										<li class='b_city'></li>
+										<li class='l_city'>请选择</li>
+									</ul>
+									<div class='city_many'></div>
+									<div class='city_small'></div>
+								</div>
 							</div>
 						</dd>
 					</dl>
@@ -251,6 +272,24 @@
 						<div class='cartorbuy'>
 							<a class='buynow'>立即购买</a>
 							<a class='cart'>加入购物车</a>
+						</div>
+						<div class='cartInf'>
+							<div class='cart_inf'>
+								<a class='close_cart'></a>
+								<div class='show_cart_inf'>
+                        			<h3>商品已成功添加至购物车</h3>
+                        			<p>购物车共有
+                        				<em id="cart-number">3</em>件商品，总价
+                        				<em id="cart-price">8794</em>元
+                        			</p>
+								</div>
+								<div class='chose'>
+									<form action="shopcart.html">
+                        				<input class="submit" type="submit" value="去购物车结算">
+                       					 <a href="#">继续购物</a>
+                   					 </form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

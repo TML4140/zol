@@ -33,12 +33,28 @@
 .confirm_inf dl{zoom: 1;width:510px;height:25px;line-height:25px;
 				margin:0 10px;padding-top:5px;}
 .confirm_inf dd{height:32px;width:440px;line-height:32px;}
+.chose_area_box{position:relative;}
 .chose_area_box	span{padding-left:6px;height:23px;line-height:23px;
 				border:1px solid #ededed;float:left;margin-right:10px;
 				}
+.chose_area_box	span em{font-style:normal}				
 .chose_area_box strong{font-weight:900;margin-left:10px;}
 .chose_area_box	i{float:right;width:23px;height:23px;margin-right:6px;
 			background:url('img/areapng.png') no-repeat;}
+.citybox{width:410px;height:auto;padding:20px 15px 0 15px;
+		background:#fff;border:1px solid #BFBFBF;display:none;
+		position:absolute;top:25px;left:0px;margin-top:-1px;
+		background:#fff;z-index: 5;}
+.citybox .cityclassfy {border-bottom:2px solid #c40000;width:410px;height:25px;}		
+.cityclassfy li{float:left;padding:0 5px;border:2px solid #c40000;margin-left:-2px;
+				border-bottom:none;height:25px;width:50px;background:#fff;text-align:center;
+				line-height:25px;}	
+.cityclassfy .unactive{width:48px;border:1px solid #ededed;margin:0;height:23px;border-bottom:none;}									
+.cityclassfy .l_city{display:none;}	
+.city_small {display:none;}
+.city_many{display:none;}
+.city_many a,.city_small a{width:80px;display:inline-block;line-height:12px;color:#36c}
+.city_many a:hover,.city_small a:hover{color:#c40000;}
 	/*单品页的地址选取的时候 span hover时
 	//背景颜色改变，三角形也改变*/
 /*显示地址的选择*/	
@@ -85,6 +101,23 @@
 .cart{width:138px;height:48px;border:1px solid #FFD9D9;
 	 color:#c40000;background:#FFEDED;}
 .cart:hover{background:#FFD9D9;}
+.cartInf{position:fixed; top: 50%;left: 50%;margin: 0 0 0 -208px;padding:4px;
+		width: 416px;background:rgba(0,0,0,0.15);z-index:10;display:none;}
+.cart_inf{position:relative;width:346px;height:118px;padding:40px 20px 40px 48px;
+			background:#fff;}
+.cart_inf .chose{width:286px;height:30px;padding:15px 0 0 60px;}
+.chose .submit{width: 110px;height: 30px;font-size: 12px;line-height: 30px;color: #fff;
+    			border: 0 none;background: #c00;margin-right:10px;}
+.chose a{color: #36c;}
+.chose a:hover{color: #C40000;} 
+.show_cart_inf{height:73px; padding: 10px 0 8px 60px;
+				background:url('img/productbg.png') no-repeat -14px -893px}
+.show_cart_inf em{font-style:normal;}
+
+.close_cart{display:block;position:absolute;width:18px;height:17px;top:3px;right:3px;
+			background:url('img/productbg.png') no-repeat -8px -280px;}
+.close_cart:hover{background-position: -8px -307px;}
+
 /******该商店的信息********/
 .store_inf{float:left;width:227px;border-left:1px solid #ededed;
 		height:630px;color:#999;}

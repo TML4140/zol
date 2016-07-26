@@ -79,18 +79,85 @@ $(function(){
 			}
 		});
 
-
-
 	//单品页的地址选取的时候 span hover时
 	//背景颜色改变，三角形也改变
 	//显示地址选择；
-	$('.chose_area_box').find('span').eq(0).hover(function(){
-		$(this).addClass('area_span_hover');
-		$(this).find('i').addClass('area_i_hover')
+	$('.chose_area_box').hover(function(){
+		$(this).find('span').eq(0).addClass('area_span_hover');
+		$(this).find('i').addClass('area_i_hover');
+		$.getJSON('http://localhost:3000/data/city.json',function(json){
+   		 	$('.city_many').html('');
+   		 	showCity(json);
+   		});
+   		$('.citybox').show();
 	},function(){
 		$(this).removeClass('area_span_hover');
-		$(this).find('i').removeClass('area_i_hover')
+		$(this).find('i').removeClass('area_i_hover');
+		$('.citybox').hide();
 	});
+	function showCity(data){
+		$('.city_many').html(' ');
+		$.each(data.regions,function(){
+			$('<a/>').html(this.name).appendTo($('.city_many'));
+		});
+		$('.city_many').show();
+		addClick(data.regions);
+	}
+	//所有的大城市都可以点，选中后，
+	//隐藏大城市的div，
+	//显示小城市，并将ul的值改变了
+	//并把大城市的值添加到ul的b_city li中
+	function addClick(data){
+		$('.city_many').find('a').each(function(){
+			$(this).on('click',function(){
+				$('.city_many').hide();
+				$('.b_city').html($(this).html());
+				$('.l_city').removeClass('unactive').show();
+				showSmallCity(data[$(this).index()]);
+				$('.b_city').addClass('unactive');
+			});
+		});
+	}
+	$('.b_city').html('重庆');
+	//城市的选项卡
+	$('.cityclassfy').find('li').on('click',function(){
+		$(this).removeClass('unactive');
+		$(this).siblings().addClass('unactive');
+		if($(this).index()==0){
+			$('.city_many').show();
+			$('.city_small').hide();
+		}else{
+			$('.city_many').hide();
+			$('.city_small').show();
+		}
+	});
+	//显示小城市的div
+	function showSmallCity(data){
+		//data是点击的大城市的对象
+		//smallCity是一个数组；存的是所有小城市的对象
+		var smallCitys=data.regions[0].regions
+		$('.city_small').html(' ')
+		$.each(smallCitys,function(){
+			$('<a/>').html(this.name).appendTo($('.city_small'));
+		});
+		$('.city_small').show();
+		addClickToSmall(hideBig);
+	}
+	function hideBig(){
+		$('.b_city').addClass('unactive');
+	}
+	//所有的小城市添加点击事件
+	//小城市选取后l_city中的值为当前点击的小城市的值
+	function addClickToSmall(hideBig){
+		$('.city_small').find('a').each(function(){
+			$(this).click(function(){
+				$('.l_city').html($(this).html()).show();
+				$('.l_city').removeClass('unactive');
+				$('.chose_area_box').find('em').html($('.b_city').html()+"   "+$('.l_city').html());
+			});
+		});
+		hideBig();
+	}
 	//加入购物车市，选择购买的时候
 	$('.color_list').find('span').each(function(){
 		$(this).hover(function(){
@@ -174,5 +241,26 @@ $(function(){
 		});
 	});
 	$('.right_nav').css({'height':$(window).height()-38});
+	/**************************加入购物***********************/
+	//判断用户知否登录
+	//如果已经登录
+	//1.弹出购物车详细信息框
+	//2.将商品详细信息存入cookie；
+	//否则弹出提示框，提示是否登录；
+	$('.cart').on('click',function(){
+		if(1){
+			$('.cartInf').show();
+			//商品信息存入cookie
+			//存入的信息有商品的编号，用户选择的商品的信息；
+			//存入的时候如果该编号已经在cookie中出现过了，则在原有数量上加1
+			var exdate=new Date();
+			 exdate.setDate(exdate.getDate()+5);//加5天
+			 var userinfo = {user:'tml',gender:'nv',myip:'23'};
+		 	 document.cookie = 'userInfo=' + JSON.stringify(userinfo)+";expires="+exdate.toGMTString();
+		}	
+	});
+	$('.cartInf,.chose a').on('click',function(){
+		$('.cartInf').hide();
+	});
 
 });
