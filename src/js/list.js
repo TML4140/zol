@@ -1,5 +1,92 @@
 $(function(){
-		//.right_bar
+	//列表页的数据分页显示；
+	var pageNo=1;
+	var pageCount=5;
+	var pageLen=1;
+	//ajax全局设置，即为ajax函数的默认的参数
+	$.ajaxSetup({
+				url:'http://localhost:3000/ajax/huawei',
+				data:{pageNo:1,pageCount:pageCount},
+				dataType:'json',
+				success:function(res){
+					//console.log(res);
+					showHuaWei(res.data);
+					// 计算分页数量 
+					pageLen = Math.ceil(res.total/res.pageCount);
+				//	console.log(pageLen);
+					$('.pagelist').find('a').remove();
+					for(var i=0;i<pageLen;i++){
+						$('<a/>').html(i+1).insertBefore($('.nextone'));
+					}
+					//让当前页面的的序号显示高亮
+					$('.pagelist').find('a').each(function(){
+						if(($(this).index())==pageNo){
+							$(this).css({'background':'#c40000','color':'#fff'});
+						}
+					});
+				}
+			});
+			// 服务根据传参的不同，返回不同的数据
+			$.ajax();
+	function showHuaWei(data){
+		console.log($('.goodslist').find('li').css('display'));
+		$('.goodslist').find('li').each(function(){
+			console.log($(this).css('display'));
+			if($(this).css('display')!='none'){
+
+				$(this).remove();
+			}
+		});
+		$.each(data,function(i,item){
+			var $newLi=$('.goodslist li').first().clone(true);
+			//从json中将数据显示克隆来的li中
+			$newLi.find('.img img').attr({"src":item.src});
+			$newLi.appendTo($('.goodslist')).show();
+		});
+	}
+	//根据每次点击获取当前的按钮的值；
+	$('.pagelist').on('click','a',function(){
+		//自己的样式改变
+		//$(this).addClass('aclick');
+		//$(this).siblings().removeClass('aclick');
+		pageNo=parseInt($(this).text());
+		var data={pageNo:pageNo};
+		//ajax,在下次调用的时候会传入参数，而且参数是会覆盖原默认参数的
+		$.ajax({
+			data:data
+		});
+	});
+	$('.nextone').on('click',function(){
+		pageNo++;
+		if(pageNo>=pageLen){
+			pageNo=pageLen;
+		}
+		var data={pageNo:pageNo};
+		$.ajax({
+			data:data
+		});
+	});
+	$('.prevone').on('click',function(){
+		pageNo--;
+		if(pageNo<=1){
+			pageNo=1;
+		}
+		var data={pageNo:pageNo};
+		$.ajax({
+			data:data
+		});
+	});
+  //所有的li都有hover事件
+  $('.goodslist').find('li').each(function(){
+  	    $(this).hover(function(){
+  	    	$(this).addClass('lihover');
+  	    	$('.jiaoyi').show();
+  	    },function(){
+  	    	$(this).removeClass('lihover');
+  	    	$('.jiaoyi').hide();
+  	    });
+  });
+	//.right_bar
 	$(window).resize(function(){
 		$('.right_bar').css({'height':$(window).height()});
 	});
@@ -26,7 +113,7 @@ $(function(){
 	/********************列表页面的品牌滚动*****************/
 	//滚动是，不会自动滚动，
 	//点击<向左滚动，点击>向右滚动；
-	console.log($('.brandlist li').width());
+	//console.log($('.brandlist li').width());
 	$('.brandlist').css({
 	    'width':$('.brandlist li').width()*$('.brandlist li').length
 	});
@@ -92,5 +179,21 @@ $(function(){
 			$(this).find('span').text('更多选项');
 			showlittle();
 		}
+	});
+	/*********发货地址**************/
+	$('.address').hover(function(){
+		$('.citylist').show();
+		$(this).addClass('addresshover');
+		},function(){
+		$('.citylist').hide();
+		$(this).removeClass('addresshover');
+	});
+	$('.addr_list').find('li').each(function(){
+		$(this).hover(function(){
+			$(this).addClass('addresshover');
+		},function(){
+			$(this).removeClass('addresshover');
+		});
+		
 	});
 });

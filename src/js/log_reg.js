@@ -34,23 +34,15 @@ $(function(){
 		}
 	});
 	var host = 'http://localhost:3000';
-	/*function serverPhoneNum(phonenum){
+	function serverPhoneNum(phonenum){
 				$.ajax({
-					url:'http://localhost:3000/ajax/checkname',
-					data:{regname:'123'},
-					success:function(res){
-						// 已注册
-						console.log(res);
-					}
-				})*/
-			/*	$.ajax({
-					url:'http://localhost:3000/ajax/chat?type=send',
+					url:'http://codeofcyg.duapp.com/user.php',
 					type:'post',
-					data:{phonenum:123},
+					data:{username:'123',password:'123'},
 					success:function(res){
 						console.log(res);
 					}
-				});*/
+				});
 	}
 	//密码
 	$('.passW').find('input').on('blur',function(){
