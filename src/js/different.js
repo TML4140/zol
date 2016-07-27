@@ -253,10 +253,25 @@ $(function(){
 			//商品信息存入cookie
 			//存入的信息有商品的编号，用户选择的商品的信息；
 			//存入的时候如果该编号已经在cookie中出现过了，则在原有数量上加1
+			var name=$('.chose_buy h3').html();
+			var imgsrc=$('.pic_desc').find('img').eq(0).attr('src');
+			var count=1;
+			var color;
+			$('.color_list').find('span').each(function(){
+				if($(this).hasClass('clickspan')){
+					color=$(this).html();
+					return false;
+				}
+			});
+			var price=$('.price strong').html();
+			var taocan="官方标配";
+			var storename="和财电子";
 			var exdate=new Date();
-			 exdate.setDate(exdate.getDate()+5);//加5天
-			 var userinfo = {user:'tml',gender:'nv',myip:'23'};
-		 	 document.cookie = 'userInfo=' + JSON.stringify(userinfo)+";expires="+exdate.toGMTString();
+			exdate.setDate(exdate.getDate()+5);//加5天
+			var id=100*Math.random();
+			var goodsinfpr="goodsinf"+id;
+				goodsinf= {name:name,imgsrc:imgsrc,count:count,color:color,taocan:taocan,storename:storename,price:price};
+		 	document.cookie =goodsinfpr+'=' + JSON.stringify(goodsinf)+";expires="+exdate.toGMTString();
 		}	
 	});
 	$('.cartInf,.chose a').on('click',function(){

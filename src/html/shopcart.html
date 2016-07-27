@@ -71,7 +71,7 @@
 			<div class='shoopcart_list'>
 				<ul class='title_list'>
 					<li class="th-1">
-						<label><input type="checkbox" value="1" checked="">全选</label>
+						<label><input class='total_chose' type="checkbox" value="1" checked="">全选</label>
 					</li>
 							<li class="th-2">所选商品</li>
 							<li class="th-3">单价（元）</li>
@@ -80,57 +80,64 @@
 							<li class="th-6">小计（元）</li>
 							<li class="th-7">操作</li>
 				</ul>
-				<ul class='shoop_inf'>
-					<li>
-						<div class="shopname">
-									<input name="store" type="checkbox"/>店铺：
-									<a href="#"/>盛通数码专营店</a>
-	                            </div>
-	                            <div class='contact'>
-	                            	<a href='#'><img src='../img/shoopcart1.png'/></a>
-	                            </div>
-	                             <div class='contact'>
-	                             	<a href='#'><img src='../img/shoopcart2.gif'/></a>
-	                    </div>
-					</li>
-				</ul>
-				<ul class='shoop_store'>
-					<li class='goodinf'>
-						<input  type="checkbox" />
-						<a href='#' class='pic'><img src='../img/shoopgoods1.jpg'/></a>
-						<div class='text_inf'>
-							<a href='#'>
-								【移动电源 +自拍杆+指环支架 盛通数码 华为专卖 】华为 P9   全网通 标准版 3GB+32GB    大
-							</a>
-							<div class='shoop_zhibao'>
-								<a href='#'></a>
-								<a href='#'></a>
-								<a href='#'></a>
-								<a href='#'></a>
+				<div class='shop_item'>
+					<ul class='shoop_inf'>
+						<li>
+							<div class="shopname">
+										<input name="store" type="checkbox"/>店铺：
+										<a href="#"/>盛通数码专营店</a>
+									</div>
+									<div class='contact'>
+										<a href='#'><img src='../img/shoopcart1.png'/></a>
+									</div>
+									 <div class='contact'>
+										<a href='#'><img src='../img/shoopcart2.gif'/></a>
 							</div>
-							<div class='xuan'>
-								<p class='yanse'>颜色：<i>白色</i></p>
-								<p class='taocan'>套餐：<i>官方套餐</i></p>								
+						</li>
+					</ul>
+					<ul class='shoop_store'>
+						<li class='goodinf'>
+							<input  type="checkbox" />
+							<a href='#' class='pic'><img src='../img/shoopgoods1.jpg'/></a>
+							<div class='text_inf'>
+								<a href='#'>
+									【移动电源 +自拍杆+指环支架 盛通数码 华为专卖 】华为 P9   全网通 标准版 3GB+32GB    大
+								</a>
+								<div class='shoop_zhibao'>
+									<a href='#'></a>
+									<a href='#'></a>
+									<a href='#'></a>
+									<a href='#'></a>
+								</div>
+								<div class='xuan'>
+									<p class='yanse'>颜色：<i>白色</i></p>
+									<p class='taocan'>套餐：<i>官方套餐</i></p>								
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class='price'>
-						<i>2888</i>
-					</li>
-					<li class='count'>
-						<span class='jiannum'>-</span>
-						<input class='num' value='3'/>
-						<span class='jiaonum'>+</span>
-					</li>
-					<li class='jianprice'>---</li>
-					<li class='s-total'>
-						<em>5888</em>
-					</li>
-					<li class='del'>
-						<a href='#'>移入收藏夹</a>
-						<a href='#' class='del_cart'>删除</a>
-					</li>
-				</ul>
+						</li>
+						<li class='price'>
+							<i>2888</i>
+						</li>
+						<li class='count'>
+							<span class='jiannum'>-</span>
+							<div class='num'/>3</div>
+							<span class='jiaonum'>+</span>
+						</li>
+						<li class='jianprice'>---</li>
+						<li class='s-total'>
+							<em>5888</em>
+						</li>
+						<li class='del'>
+							<a href='#'>移入收藏夹</a>
+							<a class='del_cart'>删除</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="total-price">
+					商品总价<span>（不含运费）</span>：
+					<em>¥</em>
+					<em class="total-cart-price">15578</em>
 			</div>
 		</form>
 	</div>
