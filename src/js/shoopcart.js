@@ -20,7 +20,7 @@ $(function(){
 		var strJson=document.cookie;
 		var jsonAttr=strJson.split(';');
 		var newArr=$.map(jsonAttr,function(n){
-			if(n.indexOf('goodsinf')!=-1){
+			if(n.indexOf('goodsinformation')!=-1){
 				return $.parseJSON(n.substring(n.indexOf('=')+1));
 			}
 		});	

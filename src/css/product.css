@@ -65,8 +65,8 @@
 			font-weight:900;}
 .evaluate span{margin:0 10px;}
 
-.service_bao i{color:#36c;margin:0 5px;}
-.service_bao .ddbg{background:url('img/ddbg.png')no-repeat;margin-left:55px;}
+.product_service_bao i{color:#36c;margin:0 5px;}
+.product_service_bao .ddbg{background:url('img/ddbg.png')no-repeat;margin-left:55px;}
 	/*****加入购物车之前***颜色套餐的选择********/
 .shoop{width:510px;height:299px;border-top:1px solid #ededed;
 		margin:10px 10px 15px 10px;}
@@ -224,7 +224,7 @@ p .shouc:hover,p .guanz:hover{background:#f2f2f2;
 .xiangqing .infor{font-size:12px;height:22px;padding:4px 0;
 				margin-bottom:8px;line-height:22px;}
 .xiangqing .infor span{font-weight:900;}
-.service{width:790px;height:200px;background:url('img/xiangqing1.png');}	
+.product_service{width:790px;height:200px;background:url('img/xiangqing1.png');}	
 .xiangqing_jie{margin:10px 0;height:33px;width:790px;background:url('img/xiangqing2.png');}	
 .chinese{width:160px;height:33px;padding-left:10px;text-align:center;
 		color:#CC0000;font:20px/33px "Microsoft YaHei";float:left;}		

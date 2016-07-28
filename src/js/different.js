@@ -269,9 +269,9 @@ $(function(){
 			var exdate=new Date();
 			exdate.setDate(exdate.getDate()+5);//加5天
 			var id=100*Math.random();
-			var goodsinfpr="goodsinf"+id;
+			var goodsinfpr="goodsinformation"+id;
 				goodsinf= {name:name,imgsrc:imgsrc,count:count,color:color,taocan:taocan,storename:storename,price:price};
-		 	document.cookie =goodsinfpr+'=' + JSON.stringify(goodsinf)+";expires="+exdate.toGMTString();
+		 	document.cookie =goodsinfpr+'=' + JSON.stringify(goodsinf)+";expires="+exdate.toGMTString()+'; path=/';
 		}	
 	});
 	$('.cartInf,.chose a').on('click',function(){

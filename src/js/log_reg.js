@@ -20,13 +20,14 @@ $(function(){
 	
 	
 /****************************用户注册验证****************************/
+	var strPhone;
 	//用户名；
 	$('.phone').find('input').on('blur',function(){
-		var strPhone=$('.phone').find('input').val();
+		strPhone=$('.phone').find('input').val();
 		if(/^1[34578]\d{9}$/.test(strPhone)){
 			if($(this).next('i').hasClass('wrong')){
 				$(this).next('i').removeClass();
-				serverPhoneNum(strPhone);
+				//serverPhoneNum(strPhone);
 			}
 			$(this).next('i').addClass('right').html(' ').show();
 		}else{
@@ -34,7 +35,7 @@ $(function(){
 		}
 	});
 	var host = 'http://localhost:3000';
-	function serverPhoneNum(phonenum){
+	/*function serverPhoneNum(phonenum){
 				$.ajax({
 					url:'http://codeofcyg.duapp.com/user.php',
 					type:'post',
@@ -43,10 +44,11 @@ $(function(){
 						console.log(res);
 					}
 				});
-	}
+	}*/
+	var strPass;
 	//密码
 	$('.passW').find('input').on('blur',function(){
-		var strPass=$('.passW').find('input').val();
+		strPass=$('.passW').find('input').val();
 		if(strPass.length>=6 && strPass.length<=16 && /\w/.test(strPass)){
 			if($(this).next('i').hasClass('wrong')){
 				$(this).next('i').removeClass();
@@ -72,13 +74,13 @@ $(function(){
 	});
 	var num;
 	num=Math.floor(5*Math.random());
-	//console.log(num);
 	var picStr;
 	var picStr=yanArr[num].src;
 	$('.pic_ma').find('img').attr('src','../img/'+picStr);
+	var strMa;
 	//图片验证
 	$('.pic_yan').find('input').on('blur',function(){
-		var strMa=$(this).val();
+		strMa=$(this).val();
 		if(strMa==yanArr[num].strMa){
 			if($('.pic_yan').find('i').hasClass('wrong')){
 				$('.pic_yan').find('i').removeClass('wrong');
@@ -100,20 +102,26 @@ $(function(){
 	});
 	//提交
 	
-	$('.reg_sub').find('input').on('click',function(){
-	
+	$('.reg_sub').find('input').on('click',function(){	
 		var inputLen=$('.phone_reg').find('input').length;
 		var rightLen=$('.phone_reg').find('.right').length;
+		console.log(inputLen-1);
 		console.log(rightLen);
-		if(inputLen-1!=rightLen){
+		if(inputLen-2!=rightLen){
 			$('.phone_reg').find('i').each(function(){
 				if(!$(this).hasClass('right')){
 					$(this).addClass('wrong').show();
 				}
 			});
-			return false;
+		}else{
+			//将用户信息存入到cookie
+			var exdate=new Date();
+			exdate.setDate(exdate.getDate()+5);//加5天
+			var id=100*Math.random();			
+			var userinf="userinf"+id;
+			user= {phone:strPhone,pass:strPass};
+		 	document.cookie =userinf+'=' + JSON.stringify(user)+";expires="+exdate.toGMTString()+'; path=/';
+			window.location='login.html';
 		}
-		//？？？？
-		window.location.href='login.html';
 	});
 });

@@ -50,7 +50,7 @@ i{font-style:normal;}
 		color:#666666;}
 
 /*热搜*/
-.search_box{float:left;widht:540px,height:61px;padding:12px 0 0 56px;}
+.search_box{float:left;width:540px,height:61px;padding:12px 0 0 56px;}
 .search{width:536px;height:32px;border:2px solid #c40000;}
 .search input{float:left;border:none;height:32px;line-height:32px;outline:none;}
 .search .put{width:446px;}
@@ -70,7 +70,7 @@ i{font-style:normal;}
 			right:20px;
 			}
 .left_nav{display:none;float:left;position:absolute;height:410px;width:200px;
-			background:#2d2d2d;top:34px;left:0;}
+			background:#2d2d2d;top:34px;left:0;z-index:20;}
 .left_nav li{height:38px;width:199px;line-height:38px;margin-left:1px;
 			border-top:1px solid #3d3d3d;}
 .left_nav li i{float:left;width:20px;padding:13px 0 0 13px;}			
@@ -81,7 +81,11 @@ i{font-style:normal;}
 .clock img{width:100%;height:100%;}
 /*******侧导航的详细信息*******/
 .left_nav li div{display:none;position:absolute;background:#fff;width:740px;height:400px;
-			top:10px;left:210px;opacity:0.98;}
+			top:10px;left:200px;opacity:0.98;padding-left:10px;}
+.service{width:740px;height:auto;overflow:hidden;}			
+.service dt{width:150px;height:40px;float:left;text-align:center;font-size:14px;
+			color:#999;}	
+.service dd{float:left;}			
 /***********nav**************/
 .nav{float:left;}
 .nav li{padding:0 20px;float:left;height:30px;line-height:30px;

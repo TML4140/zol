@@ -11,7 +11,10 @@
 
 .login{width:988px;height:350px;margin-top:26px;border:1px solid #E6E6E6;}
 .login_add{float:left;}
-.login_layer{float:right;margin-right:85px;}
+.login_layer{float:right;margin-right:85px;position:relative;}
+.login_layer .login_wrong{position:absolute;top:50px;padding-left:25px; display:none;
+				    width: 263px;height: 22px;font: 12px/22px "Arial";color: #f33;border: 1px solid #f99;
+   					background:#fff2f2 url('img/loginbg.png')no-repeat -270px -89px;}
 .header_login{height:28px;padding-top:20px;width:294px;line-height:28px;}
 .header_login h3{float:left;font:18px/28px "Microsoft YaHei";width:189px;}
 .header_login a{width:84px;padding-left:17px;float:right;

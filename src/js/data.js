@@ -4,4 +4,4 @@ var yanArr=[
 			{"strMa":"64C5","src":"yanpic3.png"},
 			{"strMa":"12A","src":"yanpic4.png"},
 			{"strMa":"87","src":"yanpic5.png"}
-		 ];
+		  ];

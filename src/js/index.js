@@ -1,4 +1,27 @@
 $(function(){
+	//获取登陆的用户名
+	function getCookie(){
+		var strJson=document.cookie;
+		var jsonAttr=strJson.split(';');
+		var newArr=$.map(jsonAttr,function(n){
+			if(n.indexOf('denglu')!=-1){
+				return $.parseJSON(n.substring(n.indexOf('=')+1));
+			}
+		});	
+		return newArr;
+	}
+	$('.logininfo').find('span').each(function(i,ele){
+		if(i==1){
+			$(this).find('a').remove;
+			if(getCookie().length!=0){
+	 			$(this).html('Hi~<em>'+getCookie()[0].name+'</em>欢迎来到ZOL商城');				
+			}
+
+		}
+		if(i==2){
+			$(this).remove();
+		}
+	});
 	//topbar中有子菜单的li进行遍历
 	$('.submenue').each(function(idx,ele){
 		$(ele).hover(function(){
@@ -90,12 +113,12 @@ $(function(){
 	});
 	/*************轮播插件的调用****************/
 	var imgSrc=['banner1.jpg','banner2.jpg','banner3.jpg','banner4.jpg','banner5.jpg','banner6.jpg'];
-	$('#banner_carousel').tmlCarousel(imgSrc);
+	$('#banner_carousel').tmlCarousel(imgSrc,{"text":true,"indexH":'20'});
 	imgSrc=['onefloor1.jpg','onefloor2.jpg','onefloor3.jpg']
-	$('#onefloor').tmlCarousel(imgSrc,false);
+	$('#onefloor').tmlCarousel(imgSrc,{"text":false,"indexH":'14'});
 	imgSrc=['secondfloor1.png','secondfloor2.png'];
-	$('#secondfloor').tmlCarousel(imgSrc,false);
-	$('#threefloor').tmlCarousel(imgSrc,false);
+	$('#secondfloor').tmlCarousel(imgSrc,{"text":false,"indexH":'14'});
+	$('#threefloor').tmlCarousel(imgSrc,{"text":false,"indexH":'14'});
 	imgSrc=['onefloor1.jpg','onefloor2.jpg','onefloor3.jpg']
-	$('#fourfloor').tmlCarousel(imgSrc,false);
+	$('#fourfloor').tmlCarousel(imgSrc,{"text":false,"indexH":'14'});
 });

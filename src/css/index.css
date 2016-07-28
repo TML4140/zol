@@ -17,6 +17,7 @@ i{font-style:normal;}
 .wrapper .nocolorc a{color:#333333;}
 .logininfo span{float:left;padding-right:23px;}
 .wrapper span a{color:#3366cc;}
+.wrapper em{color:#3366cc;font-style:normal;margin:0 3px;}
 .wrapper  a{font:12px Arial;color:#333333;}
 .wrapper  a:hover{text-decoration:underline;color:#c40000;}
 
@@ -84,7 +85,11 @@ i{font-style:normal;}
 .indexright{right:-350px;background:url('img/indexright.jpg');}
 /*******侧导航的详细信息*******/
 .left_nav li div{display:none;position:absolute;background:#fff;width:740px;height:400px;
-			top:10px;left:210px;opacity:0.98;}
+			top:10px;left:200px;opacity:0.98;padding-left:10px;}
+.service{width:740px;height:auto;overflow:hidden;}			
+.service dt{width:150px;height:40px;float:left;text-align:center;font-size:14px;
+			color:#999;}	
+.service dd{float:left;}			
 /***********nav**************/
 .nav{float:left;}
 .nav li{padding:0 20px;float:left;height:30px;line-height:30px;
@@ -98,7 +103,7 @@ i{font-style:normal;}
 .banner{height:410px;}
 /*******轮播********/
 .focus{float:left;width:740px;height:400px;overflow: hidden;
-		margin:10px 10px 0 210px;background:red;position:relative;}
+		margin:10px 10px 0 210px;position:relative;z-index: -900;}
 .banner_side{float:right;width:240px;height:410px;}
 .banner_side .notice{width:198px;height:150px;padding:15px 20px;
 					 border:1px solid #ededed;margin-top:10px;}

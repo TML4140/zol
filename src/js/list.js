@@ -29,7 +29,7 @@ $(function(){
 			// 服务根据传参的不同，返回不同的数据
 			$.ajax();
 	function showHuaWei(data){
-		console.log($('.goodslist').find('li').css('display'));
+	//	console.log($('.goodslist').find('li').css('display'));
 		$('.goodslist').find('li').each(function(){
 			console.log($(this).css('display'));
 			if($(this).css('display')!='none'){
@@ -41,14 +41,15 @@ $(function(){
 			var $newLi=$('.goodslist li').first().clone(true);
 			//从json中将数据显示克隆来的li中
 			$newLi.find('.img img').attr({"src":item.src});
+			$newLi.find('.img').attr({"href":item.href});
+			$newLi.find('.title a').attr({"href":item.href});
+			$newLi.find('.list_price em').html(item.price);
 			$newLi.appendTo($('.goodslist')).show();
 		});
 	}
 	//根据每次点击获取当前的按钮的值；
 	$('.pagelist').on('click','a',function(){
 		//自己的样式改变
-		//$(this).addClass('aclick');
-		//$(this).siblings().removeClass('aclick');
 		pageNo=parseInt($(this).text());
 		var data={pageNo:pageNo};
 		//ajax,在下次调用的时候会传入参数，而且参数是会覆盖原默认参数的
@@ -56,6 +57,15 @@ $(function(){
 			data:data
 		});
 	});
+	//console.log($('.pagelist i'));
+	$('.pagelist i').each(function(){
+		$(this).hover(function(){
+			$(this).addClass('aclick');
+		},function(){
+			$(this).removeClass('aclick');
+		});
+	});
+
 	$('.nextone').on('click',function(){
 		pageNo++;
 		if(pageNo>=pageLen){

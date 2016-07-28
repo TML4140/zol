@@ -109,11 +109,11 @@
 				}
 .pagelist {padding:50px 0 30px 450px;width:auto;color:#B3B3B3;margin:0 auto;}
 .pagelist .prevone,.pagelist .nextone{width:42px;height:32px;border:1px solid #ededed;margin:0 2px;
-			padding:0 12px 0 25px;line-height:32px;text-align:center;}
+			padding:0 12px 0 25px;line-height:32px;text-align:center;display:inline-block;}
 .pagelist a{display:inline-block;width:8px;height:32px;padding:0 12px;margin:0 2px;
 			border:1px solid #e6e6e6;text-align:center;line-height:32px;}
 .pagelist a:hover{border:1px solid #c40000;}
-.pagelist .aclick{background:#c40000;color:#fff;}
+.pagelist .aclick{border:2px solid #c40000;height:30px;width:40px;margin-top:-1px;}
 .pagelist li{float:left;}				
 .goodslist li{width:200px;height:318px;padding:19px 19px 10px 19px;margin-bottom:30px;
 			 margin-top:20px;float:left;display:none;}	

@@ -1,11 +1,20 @@
+//插件说明：
+//1.参数attr：图片的路径，数组类型
+//2.参数text：为json数组用于给轮播设置属性
+//			text：在轮播上小圆形中是否有文字
+//			indexH: 在轮播上小图形的大小
+
 (function($){
 	$.fn.tmlCarousel=function(attr,text){
 		//1.根据调用的对象的宽高建立轮播的区域
+		console.log('插件');
 		var defaults={
 			'text':true,
+			'indexH':'20'
 		}
 		var $this=$(this);
 		var parameter = $.extend({},defaults,text);
+		//console.log(parameter);
 		var deftext=true;
 		var len=attr.length;
 		var carList=$('<ul/>');
@@ -38,15 +47,15 @@
 		carList.find('li').css({'float':'left'});
 		smallList.find('li').css({
 			'float':'left',
-			'width':'20',
-			'height':'20',
+			'width':parameter.indexH,
+			'height':parameter.indexH,
 			'marginRight':10,
 			'backgroundColor':'#606366',
 			'color':'#fff',
 			'padding':0,
 			'border':0,
 			'textAlign':'center',
-			'borderRadius':30
+			'borderRadius':15,
 		});
 		if(parameter.text){
 			smallList.find('li').each(function(idx){
